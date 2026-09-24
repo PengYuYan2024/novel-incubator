@@ -1,0 +1,13 @@
+# Public releases are clean source snapshots, NOT pushes of the private history.
+# Keep the live binding in the private checkout, never in a public archive.
+/.openai/hosting.json export-ignore
+
+# Private planning and maintenance records stay in the private repository.
+/docs/superpowers/** export-ignore
+/docs/progress/** export-ignore
+/docs/draft-protection-progress.md export-ignore
+/docs/navigation-regression-2026-09-14.md export-ignore
+
+# Defensive exclusions if an internal release file is ever tracked here.
+/maintenance-*-release.md export-ignore
+/novel-incubator-*.tar.gz export-ignore

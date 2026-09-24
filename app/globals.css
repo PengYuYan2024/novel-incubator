@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "../vendor/shadcn-tailwind-4.13.0.css";
+
+@utility scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+@utility scrollbar-none {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility scrollbar-gutter-stable {
+  scrollbar-gutter: stable;
+}
+
+:root {
+  color-scheme: light;
+  --background: #f7f4ed;
+  --foreground: #28251f;
+  --card: #fffdf8;
+  --card-foreground: #28251f;
+  --popover: #fffdf8;
+  --popover-foreground: #28251f;
+  --primary: #4f2d16;
+  --primary-foreground: #fff8ea;
+  --secondary: #e9e4da;
+  --secondary-foreground: #352f28;
+  --muted: #ede9e0;
+  --muted-foreground: #6f675e;
+  --accent: #f2dfb7;
+  --accent-foreground: #4b2f18;
+  --destructive: #a23b32;
+  --border: #d7d0c4;
+  --input: #cfc6b8;
+  --ring: #ad6d2d;
+  --chart-1: #b66a24;
+  --chart-2: #2f6b58;
+  --chart-3: #6d5843;
+  --chart-4: #c29235;
+  --chart-5: #67735f;
+  --radius: 0.75rem;
+  --sidebar: #eeeae1;
+  --sidebar-foreground: #302c26;
+  --sidebar-primary: #4f2d16;
+  --sidebar-primary-foreground: #fff8ea;
+  --sidebar-accent: #e5dccd;
+  --sidebar-accent-foreground: #3d2d20;
+  --sidebar-border: #d4ccbf;
+  --sidebar-ring: #ad6d2d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: "Noto Sans SC", "Microsoft YaHei UI", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Noto Sans SC", "Microsoft YaHei UI", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: 1rem;
+  min-height: 100vh;
+  overflow-wrap: anywhere;
+}
+
+.font-serif {
+  font-family: "Noto Serif SC", "Songti SC", SimSun, serif;
+}
+
+::selection {
+  background: #ecd29e;
+  color: #352110;
+}
